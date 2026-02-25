@@ -178,13 +178,13 @@ void ShowAllData()
         foreach (var item in allData)
         {
             Console.WriteLine($"ID: {item.Id}");
-            Console.WriteLine($"  Время старта: {item.StartTime}");
+            Console.WriteLine($"  Время старта web-installer: {item.StartTime}");
             Console.WriteLine($"  Режим работы: '{item.WorkMode}'");
-            Console.WriteLine($"  Elevation: '{item.ElevationResult}'");
-            Console.WriteLine($"  Download: '{item.DownloadResult}'");
-            Console.WriteLine($"  DownloadError: '{item.DownloadError}'");
-            Console.WriteLine($"  LaunchResult: '{item.LaunchResult}'");
-            Console.WriteLine($"  Получено: {item.ReceivedAt}");
+            Console.WriteLine($"  Запуск от администратора: '{item.ElevationResult}'");
+            Console.WriteLine($"  Результат скачивания: '{item.DownloadResult}'");
+            Console.WriteLine($"  Ошибка скачивания: '{item.DownloadError}'");
+            Console.WriteLine($"  Результат запуска EXE: '{item.LaunchResult}'");
+            Console.WriteLine($"  Получена статистика: {item.ReceivedAt}");
             Console.WriteLine("--------------------------------------");
         }
     }
